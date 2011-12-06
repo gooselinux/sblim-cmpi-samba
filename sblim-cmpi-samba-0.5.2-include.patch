@@ -1,0 +1,212 @@
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForPrinter/Linux_SambaAllowHostsForPrinterResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForPrinter/Linux_SambaAllowHostsForPrinterResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForPrinter/Linux_SambaAllowHostsForPrinterResourceAccess.cpp_old	2007-08-27 10:18:38.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForPrinter/Linux_SambaAllowHostsForPrinterResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -26,6 +26,7 @@
+ 
+ #include <string>
+ #include <list>
++#include <cstdlib>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForShare/Linux_SambaAllowHostsForShareResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForShare/Linux_SambaAllowHostsForShareResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForShare/Linux_SambaAllowHostsForShareResourceAccess.cpp_old	2007-08-27 10:18:39.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaAllowHostsForShare/Linux_SambaAllowHostsForShareResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -26,6 +26,7 @@
+ 
+ #include <string>
+ #include <list>
++#include <cstdlib>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForPrinter/Linux_SambaDenyHostsForPrinterResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForPrinter/Linux_SambaDenyHostsForPrinterResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForPrinter/Linux_SambaDenyHostsForPrinterResourceAccess.cpp_old	2007-08-27 10:18:43.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForPrinter/Linux_SambaDenyHostsForPrinterResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -29,6 +29,7 @@
+ 
+ #include <string>
+ #include <list>
++#include <cstdlib>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForShare/Linux_SambaDenyHostsForShareResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForShare/Linux_SambaDenyHostsForShareResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForShare/Linux_SambaDenyHostsForShareResourceAccess.cpp_old	2007-08-27 10:18:44.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaDenyHostsForShare/Linux_SambaDenyHostsForShareResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -29,6 +29,7 @@
+ 
+ #include <string>
+ #include <list>
++#include <cstdlib>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingForGlobal/Linux_SambaGlobalPrintingForGlobalResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingForGlobal/Linux_SambaGlobalPrintingForGlobalResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingForGlobal/Linux_SambaGlobalPrintingForGlobalResourceAccess.cpp_old	2007-08-27 10:18:52.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingForGlobal/Linux_SambaGlobalPrintingForGlobalResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -24,6 +24,8 @@
+ // 
+ #include "Linux_SambaGlobalPrintingForGlobalResourceAccess.h"
+ 
++#include <cstdlib>
++
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+ 
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingOptions/Linux_SambaGlobalPrintingOptionsResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingOptions/Linux_SambaGlobalPrintingOptionsResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingOptions/Linux_SambaGlobalPrintingOptionsResourceAccess.cpp_old	2007-08-27 10:18:53.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalPrintingOptions/Linux_SambaGlobalPrintingOptionsResourceAccess.cpp	2009-10-22 16:00:09.000000000 +0200
+@@ -23,6 +23,8 @@
+ //
+ // 
+ #include "Linux_SambaGlobalPrintingOptionsResourceAccess.h"
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityForGlobal/Linux_SambaGlobalSecurityForGlobalResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityForGlobal/Linux_SambaGlobalSecurityForGlobalResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityForGlobal/Linux_SambaGlobalSecurityForGlobalResourceAccess.cpp_old	2007-08-27 10:18:55.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityForGlobal/Linux_SambaGlobalSecurityForGlobalResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -24,6 +24,8 @@
+ // 
+ #include "Linux_SambaGlobalSecurityForGlobalResourceAccess.h"
+ 
++#include <cstdlib>
++
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+ 
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityOptions/Linux_SambaGlobalSecurityOptionsResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityOptions/Linux_SambaGlobalSecurityOptionsResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityOptions/Linux_SambaGlobalSecurityOptionsResourceAccess.cpp_old	2007-08-27 10:18:55.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaGlobalSecurityOptions/Linux_SambaGlobalSecurityOptionsResourceAccess.cpp	2009-10-22 16:13:11.000000000 +0200
+@@ -23,6 +23,8 @@
+ //
+ // 
+ #include "Linux_SambaGlobalSecurityOptionsResourceAccess.h"
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroupForUser/Linux_SambaGroupForUserResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroupForUser/Linux_SambaGroupForUserResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroupForUser/Linux_SambaGroupForUserResourceAccess.cpp_old	2007-08-27 10:18:57.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroupForUser/Linux_SambaGroupForUserResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -25,6 +25,7 @@
+ #include "Linux_SambaGroupForUserResourceAccess.h"
+ 
+ #include <errno.h>
++#include <cstdlib>
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+ 
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroup/Linux_SambaGroupResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroup/Linux_SambaGroupResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroup/Linux_SambaGroupResourceAccess.cpp_old	2007-08-27 10:18:56.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaGroup/Linux_SambaGroupResourceAccess.cpp	2009-10-22 16:48:35.000000000 +0200
+@@ -25,6 +25,8 @@
+ #include "Linux_SambaGroupResourceAccess.h"
+ 
+ #include <errno.h>
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterOptions/Linux_SambaPrinterOptionsResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterOptions/Linux_SambaPrinterOptionsResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterOptions/Linux_SambaPrinterOptionsResourceAccess.cpp_old	2007-08-27 10:19:09.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterOptions/Linux_SambaPrinterOptionsResourceAccess.cpp	2009-10-22 16:23:42.000000000 +0200
+@@ -23,6 +23,8 @@
+ //
+ // 
+ #include "Linux_SambaPrinterOptionsResourceAccess.h"
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingForPrinter/Linux_SambaPrinterPrintingForPrinterResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingForPrinter/Linux_SambaPrinterPrintingForPrinterResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingForPrinter/Linux_SambaPrinterPrintingForPrinterResourceAccess.cpp_old	2007-08-27 10:19:11.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingForPrinter/Linux_SambaPrinterPrintingForPrinterResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -24,6 +24,8 @@
+ // 
+ #include "Linux_SambaPrinterPrintingForPrinterResourceAccess.h"
+ 
++#include <cstdlib>
++
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+ 
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingOptions/Linux_SambaPrinterPrintingOptionsResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingOptions/Linux_SambaPrinterPrintingOptionsResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingOptions/Linux_SambaPrinterPrintingOptionsResourceAccess.cpp_old	2007-08-27 10:19:12.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaPrinterPrintingOptions/Linux_SambaPrinterPrintingOptionsResourceAccess.cpp	2009-10-22 16:29:57.000000000 +0200
+@@ -23,6 +23,8 @@
+ //
+ // 
+ #include "Linux_SambaPrinterPrintingOptionsResourceAccess.h"
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForGlobal/Linux_SambaShareSecurityForGlobalResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForGlobal/Linux_SambaShareSecurityForGlobalResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForGlobal/Linux_SambaShareSecurityForGlobalResourceAccess.cpp_old	2007-08-27 10:19:25.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForGlobal/Linux_SambaShareSecurityForGlobalResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -24,6 +24,8 @@
+ // 
+ #include "Linux_SambaShareSecurityForGlobalResourceAccess.h"
+ 
++#include <cstdlib>
++
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+ 
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForShare/Linux_SambaShareSecurityForShareResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForShare/Linux_SambaShareSecurityForShareResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForShare/Linux_SambaShareSecurityForShareResourceAccess.cpp_old	2007-08-27 10:19:25.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityForShare/Linux_SambaShareSecurityForShareResourceAccess.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -24,6 +24,8 @@
+ // 
+ #include "Linux_SambaShareSecurityForShareResourceAccess.h"
+ 
++#include <cstdlib>
++
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+ 
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityOptions/Linux_SambaShareSecurityOptionsResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityOptions/Linux_SambaShareSecurityOptionsResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityOptions/Linux_SambaShareSecurityOptionsResourceAccess.cpp_old	2007-08-27 10:19:25.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaShareSecurityOptions/Linux_SambaShareSecurityOptionsResourceAccess.cpp	2009-10-22 16:36:58.000000000 +0200
+@@ -23,6 +23,8 @@
+ //
+ // 
+ #include "Linux_SambaShareSecurityOptionsResourceAccess.h"
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/Linux_SambaUser/Linux_SambaUserResourceAccess.cpp_old sblim-cmpi-samba-0.5.2/provider/Linux_SambaUser/Linux_SambaUserResourceAccess.cpp
+--- sblim-cmpi-samba-0.5.2/provider/Linux_SambaUser/Linux_SambaUserResourceAccess.cpp_old	2007-08-27 10:19:26.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/Linux_SambaUser/Linux_SambaUserResourceAccess.cpp	2009-10-22 16:56:30.000000000 +0200
+@@ -25,6 +25,8 @@
+ #include "Linux_SambaUserResourceAccess.h"
+ 
+ #include <errno.h>
++#include <cstdlib>
++#include <cstdio>
+ 
+ #include "smt_smb_ra_support.h"
+ #include "smt_smb_defaultvalues.h"
+diff -up sblim-cmpi-samba-0.5.2/provider/support/smt_smb_array.cpp_old sblim-cmpi-samba-0.5.2/provider/support/smt_smb_array.cpp
+--- sblim-cmpi-samba-0.5.2/provider/support/smt_smb_array.cpp_old	2006-07-22 16:34:26.000000000 +0200
++++ sblim-cmpi-samba-0.5.2/provider/support/smt_smb_array.cpp	2009-10-22 15:48:49.000000000 +0200
+@@ -25,6 +25,9 @@
+ #include <string>
+ #include <list>
+ #include <iostream>
++#include <cstdlib>
++#include <cstring>
++#include <algorithm>
+ 
+ using namespace std;
+ 

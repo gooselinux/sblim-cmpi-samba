@@ -1,0 +1,11 @@
+--- model/Linux_Samba.mof       2007-08-17 13:02:57.000000000 +0200
++++ model/Linux_Samba.mof       2007-08-17 13:03:03.000000000 +0200
+@@ -178,7 +178,7 @@
+     string Path;
+ 
+     [Write]
+-    boolean Printable = "yes";
++    boolean Printable = true;
+ 
+     [Write]
+     string SystemPrinterName;
